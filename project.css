@@ -1,0 +1,68 @@
+/* Extra styles for project.html. Loads AFTER style.css. */
+.page-head{background:var(--ink);color:#fff;padding:64px 0 48px}
+.page-head h1{font-size:clamp(32px,5vw,58px);max-width:16em;margin:10px 0 0}
+.crumbs{font-size:14px;color:#aeb2b6}.crumbs a{color:#fff}.crumbs a:hover{color:var(--orange)}
+.gallery .carousel-item{height:540px}
+.gallery .carousel-item img{width:100%;height:100%;object-fit:cover;display:block}
+.gallery .carousel-control-prev,.gallery .carousel-control-next{width:60px;opacity:1}
+.gallery .carousel-control-prev-icon,.gallery .carousel-control-next-icon{background-color:var(--ink);background-size:50%;width:46px;height:46px}
+.thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:8px}
+.thumbs button{border:0;padding:0;height:90px;background:#d9d9d5;opacity:.65;border-bottom:4px solid transparent}
+.thumbs button.active{opacity:1;border-color:var(--orange)}
+.thumbs img{width:100%;height:100%;object-fit:cover;display:block}
+.facts{width:100%;border-collapse:collapse}
+.facts th,.facts td{padding:14px 0;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+.facts th{width:38%;font-size:14px;color:var(--mid);font-weight:600}
+.facts td{font-weight:600}
+.next-link{display:block;padding:26px 0;border-top:1px solid var(--line);color:var(--ink)}
+.next-link small{display:block;color:var(--mid)}.next-link strong{font-size:22px}.next-link:hover strong{color:var(--orange)}
+@media(max-width:767.98px){.gallery .carousel-item{height:300px}.thumbs button{height:54px}}
+
+/* projects page: filters + cards; inner pages */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px}
+.filters button{border:2px solid var(--ink);background:#fff;color:var(--ink);font-weight:700;font-size:15px;padding:9px 20px}
+.filters button:hover{border-color:var(--orange);color:var(--orange)}
+.filters button.on{background:var(--ink);color:#fff}
+.pcard{display:block;color:var(--ink);height:100%}
+.pcard .ph{height:260px}
+.pcard img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.pcard:hover img{transform:scale(1.04)}
+.pcard h3{font-size:22px;margin:16px 0 4px}
+.pcard:hover h3{color:var(--orange)}
+.pcard p{color:var(--mid);margin:0;font-size:15px}
+.timeline{border-left:3px solid var(--orange);padding-left:24px}
+.timeline div{margin-bottom:26px}.timeline strong{display:block;font-size:30px;font-weight:800}
+.contact-card{background:var(--grey);padding:34px}
+.contact-card .footer-contact{color:var(--ink)}
+.form-control{border-radius:0;border:2px solid var(--line);padding:12px 14px}
+.form-control:focus{border-color:var(--orange);box-shadow:none}
+.map{border:0;width:100%;height:380px;display:block}
+
+.person{display:flex;gap:18px;align-items:center;margin-bottom:22px}
+.person .ph{width:96px;height:96px;flex:none;border-radius:50%}
+.person .ph::before{border-radius:50%}
+.person .ph:has(img.img-missing)::before{content:"Photo";inset:6px;font-size:12px;white-space:normal}
+.person img{width:100%;height:100%;object-fit:cover;display:block}
+.person h3{font-size:19px;margin:0 0 2px}.person p{margin:0;color:var(--mid);font-size:15px}
+.vm{padding:34px;height:100%}.vm.dark{background:var(--ink);color:#fff}.vm.blue{background:var(--orange);color:#fff}
+.vm h3{font-size:26px;margin-bottom:12px}.vm p{margin:0;font-size:17px}
+.person.np{border-left:3px solid var(--orange);padding-left:16px}
+
+/* vision, mission and belief (about page) */
+.vm-card{position:relative;overflow:hidden;height:100%;padding:44px 40px;border-radius:14px;color:#fff}
+.vm-card.dark{background:var(--ink)}
+.vm-card.accent{background:var(--orange)}
+.vm-mark{position:absolute;right:-18px;bottom:-34px;font-size:210px;line-height:1;opacity:.08}
+.vm-icon{width:64px;height:64px;display:grid;place-items:center;border:2px solid rgba(255,255,255,.6);border-radius:50%;font-size:28px;margin-bottom:26px}
+.vm-card .k{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;opacity:.8;margin:0 0 8px}
+.vm-card h3{font-size:34px;margin-bottom:14px}
+.vm-card p:last-child{position:relative;font-size:19px;line-height:1.7;margin:0;max-width:30em}
+.belief{margin-top:72px;padding-top:56px;border-top:1px solid var(--line)}
+.belief .k{color:var(--orange);font-weight:700;font-size:14px;margin-bottom:12px}
+.belief h2{font-size:clamp(32px,5vw,58px);max-width:14em}
+.belief h2 span{color:var(--orange)}
+.belief-item{display:flex;gap:18px}
+.belief-item>i{flex:none;width:52px;height:52px;display:grid;place-items:center;background:var(--ink);color:#fff;font-size:24px;border-radius:12px}
+.belief-item h3{font-size:21px;margin:0 0 6px}
+.belief-item p{color:var(--mid);margin:0;font-size:16px}
+@media(max-width:767.98px){.vm-card{padding:34px 26px}.belief{margin-top:52px;padding-top:40px}}
