@@ -24,7 +24,7 @@ h1,h2,h3{font-weight:800;letter-spacing:-.02em;line-height:1.1}
 
 /* hero: photo layer (images/hero.jpg) over a concrete-grey fallback */
 .hero{min-height:calc(100vh - 71px);min-height:calc(100svh - 71px);display:flex;align-items:flex-end;color:#fff;
- background:linear-gradient(0deg,rgba(15,16,18,.88) 0%,rgba(15,16,18,.45) 55%,rgba(15,16,18,.25) 100%),url("IMAGES/hero.jpg") center/cover no-repeat,#34383c}
+ background:linear-gradient(0deg,rgba(15,16,18,.88) 0%,rgba(15,16,18,.45) 55%,rgba(15,16,18,.25) 100%),url("./IMAGES/hero1.jpg") center/cover no-repeat,#34383c}
 .hero-inner{padding:90px 12px 70px}
 .hero h1{font-size:clamp(40px,7vw,88px);max-width:12em;margin-bottom:22px}
 .hero h1 b{color:var(--orange);font-weight:800}
